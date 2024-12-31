@@ -1,0 +1,41 @@
+name: danger_classification_app
+description: A Flutter application for danger classification based on input data.
+
+# This line prevents accidental publishing to pub.dev.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.2
+  provider: ^6.0.0
+  web3dart: ^2.6.1
+  flutter_secure_storage: ^5.0.2
+  video_player: ^2.5.1
+  fl_chart: ^0.69.2
+  url_launcher: ^6.3.1
+
+
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/model_danger_classification.tflite
+    - assets/bg.jpg
+    - assets/card_bg.jpg
+    - assets/pollusion.mp4
+    - assets/normal.png
+    - assets/danger.png
+    - assets/logo.png

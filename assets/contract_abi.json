@@ -1,0 +1,171 @@
+[
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "id",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "quantite",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "zoneAffectee",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "duree",
+				"type": "uint256"
+			}
+		],
+		"name": "IncidentRecorded",
+		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_quantite",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_zoneAffectee",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_duree",
+				"type": "uint256"
+			}
+		],
+		"name": "recordIncident",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_id",
+				"type": "uint256"
+			}
+		],
+		"name": "getIncidentById",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "quantite",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "zoneAffectee",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "duree",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct IncidentContract.Incident",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getIncidents",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "quantite",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "zoneAffectee",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "duree",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct IncidentContract.Incident[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "incidents",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "quantite",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "zoneAffectee",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "duree",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
